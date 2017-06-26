@@ -1,0 +1,9 @@
+edu.cnm.deepdive.cards.Deck deck = new edu.cnm.deepdive.cards.Deck();deck.shuffle();
+
+
+edu.cnm.deepdive.cards.Hand hand = new edu.cnm.deepdive.cards.Hand(deck, 5);
+
+edu.cnm.deepdive.cards.Card[][] table = hand.bySuits();
+for (edu.cnm.deepdive.cards.Card.Suit suit : edu.cnm.deepdive.cards.Card.Suit.values()) {
+		System.out.println(java.util.Arrays.toString(table[suit.ordinal()]));
+	}

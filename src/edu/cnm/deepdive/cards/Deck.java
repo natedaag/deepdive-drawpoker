@@ -49,7 +49,7 @@ public class Deck {
 		throws NoSuchAlgorithmException {
 			
 		if (rng == null) {
-			rng = SecureRandom.getInstanceStrong();
+			rng = new SecureRandom();
 		}
 		Collections.shuffle(cards, rng);
 		shuffled = true;
