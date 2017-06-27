@@ -93,6 +93,11 @@ public class Deck {
 		return hand;
 	}
 	
+	@Override
+	public String toString() {
+		return cards.toString();
+	}
+	
 }
 
 
